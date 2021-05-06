@@ -1,0 +1,133 @@
+	
+	@font-face{
+        font-family: 'JetBrains Mono';
+        src: url('../fonts/JetBrainsMono-Regular.eot') format('embedded-opentype'),
+            url('../fonts/JetBrainsMono-Regular.woff2') format('woff2'),
+            url('../fonts/JetBrainsMono-Regular.woff') format('woff'),
+            url('../fonts/JetBrainsMono-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: 'JetBrains Mono';
+        src: url('../fonts/JetBrainsMono-Bold.eot') format('embedded-opentype'),
+            url('../fonts/JetBrainsMono-Bold.woff2') format('woff2'),
+            url('../fonts/JetBrainsMono-Bold.woff') format('woff'),
+            url('../fonts/JetBrainsMono-Bold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: 'JetBrains Mono';
+        src: url('../fonts/JetBrainsMono-Italic.eot') format('embedded-opentype'),
+            url('../fonts/JetBrainsMono-Italic.woff2') format('woff2'),
+            url('../fonts/JetBrainsMono-Italic.woff') format('woff'),
+            url('../fonts/JetBrainsMono-Italic.ttf') format('truetype');
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    @font-face{
+        font-family: 'JetBrains Mono';
+        src: url('../fonts/JetBrainsMono-Bold-Italic.eot') format('embedded-opentype'),
+            url('../fonts/JetBrainsMono-Bold-Italic.woff2') format('woff2'),
+            url('../fonts/JetBrainsMono-Bold-Italic.woff') format('woff'),
+            url('../fonts/JetBrainsMono-Bold-Italic.ttf') format('truetype');
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    * {
+        font-family: 'JetBrains Mono' ;
+	}
+
+	html {
+		font-size: 12px;
+	}
+	
+	body {
+		background-color: rgba(40, 34, 63, 0.98);
+	}
+
+	.text-justify {
+		text-align: justify;
+	}
+
+	.card-component {
+		background-color: #231e39;
+		border-radius: 0.5rem;
+		box-shadow: 0.25rem 0.25rem 2rem rgba(0, 0, 0, 0.55);
+		color: #b3b8cd;
+		padding-top: 3rem;
+		padding-bottom: 2rem;
+		position: relative;
+	}
+	
+	.card-component .pro {
+		color: #231e39;
+		background-color: #febb0b;
+		border-radius: 0.5rem;
+		font-size: 1.5rem;
+		font-weight: bold;
+		padding: 0.25rem 0.5rem;
+		position: absolute;
+		top: 3rem;
+		left: 3rem;
+	}
+
+	.card-component .round {
+		border: 0.5rem solid #03bfcb;
+		box-shadow: 0px 0px 1rem #03bfcb;
+		border-radius: 50%;
+		padding: 0.6rem;
+	}
+	
+	button.primary {
+		background-color: transparent;
+		border: 0.3rem solid #02899c;
+		border-radius: 3px;
+		color: #02899c;
+		font-weight: 500;
+		padding: 10px 25px;
+		transition: 0.3s;
+	}
+
+	button.primary:hover {
+		color:  #03bfcb;
+		border-color: #03bfcb;
+	}
+
+
+	#app {
+		min-height: 100vh;
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas: 	'header 	header'
+								'aside		main'
+								'footer		footer'
+	}
+
+	header {
+		grid-area: header;
+	}
+
+	main {
+		grid-area: main;
+	}
+
+	aside {
+		grid-area: aside;
+	}
+
+	footer {
+		grid-area: footer;
+	}
+
+
+
+
+	
+	
